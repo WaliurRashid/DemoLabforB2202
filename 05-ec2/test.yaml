@@ -1,0 +1,14 @@
+Description: This is template for creating EC2 Instance
+#Parameters:
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0b5eea76982371e91
+      InstanceType: t2.micro
+      KeyName: qa-2201-key-pair
+      SubnetId: subnet-0b06b125ea2588668
+      Tags:
+        - Key: Name
+          Value: DemoInstance
+      Tenancy: default
