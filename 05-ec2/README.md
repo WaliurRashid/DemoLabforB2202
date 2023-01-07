@@ -93,7 +93,11 @@ Describe these instance attributes by querying the Cloud9 environment's
 - the image snapshot, or Amazon Machine Image (AMI), the instance was
   launched from
 
+> Ans: curl http://169.254.169.254/latest/meta-data/ami-id
+
 - the Type of instance created from that AMI
+
+> Ans: curl http://169.254.169.254/latest/meta-data/instance-type
 
 - the public IPV4 IP address
 
